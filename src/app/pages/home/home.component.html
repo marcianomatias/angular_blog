@@ -1,0 +1,21 @@
+<app-menu-title></app-menu-title>
+
+<div class="container__articles">
+  <div class="articles__main">
+    <app-big-card
+      id="{{ filmes[3].id }}"
+      cardDescription="{{ filmes[3].description }}"
+      cardTitle="{{ filmes[3].title }}"
+      photoCover="{{ filmes[3].photoCover }}"
+    ></app-big-card>
+  </div>
+  <div class="articles__others">
+    <div *ngFor="let filme of filmes">
+      <app-small-card
+        id="{{ filme.id }}"
+        cardTitle="{{ filme.title }}"
+        photoCover="{{ filme.photoCover }}"
+      ></app-small-card>
+    </div>
+  </div>
+</div>
